@@ -1,5 +1,6 @@
 # 2-minute demo
 
+0. **Home, simple view** — the four things for this week; log a comment from here. Click **Show all tools** for the rest.
 1. **Overview** (0:00) — the six steps, each with progress and one next action, computed from the data. The sample's weak spot is the profile (38/100).
 2. **1 Research** (0:20) — the language bank: “content gets likes but no leads” was said by 4 of 10 buyers. Switch the breakdown to *Hook type* to see which hooks score highest for competitors.
 3. **2 Profile** (0:45) — click the suggested headline, then type an About section that names the buyer's problem, your approach, proof and “book a call”. The audit climbs as you type.

@@ -777,7 +777,7 @@
           "bucket": "problems",
           "kind": "opinion",
           "visual": "text-only",
-          "status": "draft",
+          "status": "scheduled",
           "title": "The ghostwriter didn’t understand your product. That’s a briefing problem.",
           "hook": "The ghostwriter didn’t understand your product. That’s a briefing problem.",
           "body": "",

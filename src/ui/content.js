@@ -53,7 +53,7 @@ export function renderContent(ctx) {
     <p class="muted">Four buckets, each fed by your research. Every post gets a visual that fits what it shows. Mix below covers the 28 days from ${formatDate(addDays(today, -13), { year: false })}.</p></div>
     <div class="chips">${pill(`Next post: ${bucketLabel(next)}`)}</div></div>
 
-  <div class="buckets">${BUCKETS.map((b) => {
+  <div class="buckets adv">${BUCKETS.map((b) => {
     const m = mix.find((x) => x.bucket === b.id);
     return `<section class="card bucket" style="--bucket:${b.color}"><h2>${esc(b.label)}</h2><p class="small muted">${esc(b.help)}</p>
       <p class="small"><strong class="tabular">${m.count}</strong> post(s) · ${pct(m.share, 0)} of mix · target ${pct(m.target, 0)}</p></section>`;
@@ -67,7 +67,7 @@ export function renderContent(ctx) {
     </section>
   </div>
 
-  <section class="card"><div class="card-head"><h2>Next 4 weeks</h2><span class="muted small">Target: ${ws.settings.weeklyPosts} posts / week</span></div>
+  <section class="card adv"><div class="card-head"><h2>Next 4 weeks</h2><span class="muted small">Target: ${ws.settings.weeklyPosts} posts / week</span></div>
     <div class="weeks">${cal.map((w) => `<div class="week"><h3>${formatDate(w.from, { year: false })} – ${formatDate(w.to, { year: false })} <span class="muted small">${w.items.length}/${ws.settings.weeklyPosts}</span></h3>
       ${w.items.length ? `<ul>${w.items.map((p) => `<li><button type="button" class="btn link" data-action="edit" data-type="post" data-id="${esc(p.id)}">${esc(p.title || '(untitled)')}</button><br><span class="muted small">${formatDate(p.date, { year: false })} · ${esc(BUCKETS.find((b) => b.id === p.bucket)?.short)} · ${esc(p.status)}</span></li>`).join('')}</ul>` : '<p class="muted small">Nothing planned.</p>'}</div>`).join('')}</div>
   </section>

@@ -14,18 +14,18 @@
     <div class="site-header__inner">
       <div class="site-header__top">
         <a class="site-brand" href="#overview"><svg class="site-brand__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="7"/><path class="glyph-s" stroke-width="2.6" d="M10 13v10M10 9v.5M15 23v-6a3.5 3.5 0 0 1 7 0v6M15 13v10"/></svg><span class="site-brand__name">LinkedIn GTM Studio</span></a>
-        <div class="site-header__extra"><label for="ws-switch" class="sr-only">Workspace</label><select id="ws-switch" class="ws-switch"></select></div>
+        <div class="site-header__extra"><label for="ws-switch" class="sr-only">Workspace</label><select id="ws-switch" class="ws-switch"></select><button type="button" class="btn small" id="mode-toggle" data-action="toggle-simple"></button></div>
         <a class="site-home" href="https://dash-boop0.github.io/"><span aria-hidden="true">←</span> All projects</a>
       </div>
       <nav class="site-tabs" id="tabs" aria-label="Main">
-        <a href="#overview" data-tab="overview">Overview</a>
-        <a href="#research" data-tab="research">1 Research</a>
-        <a href="#profile" data-tab="profile">2 Profile</a>
-        <a href="#content" data-tab="content">3–4 Content</a>
-        <a href="#engage" data-tab="engage">5 Engage</a>
-        <a href="#analytics" data-tab="analytics">6 Analytics</a>
+        <a href="#overview" data-tab="overview" data-simple="Home" data-full="Overview">Overview</a>
+        <a href="#research" data-tab="research" data-simple="Dream clients" data-full="1 Research">1 Research</a>
+        <a href="#profile" data-tab="profile" data-simple="Profile" data-full="2 Profile">2 Profile</a>
+        <a href="#content" data-tab="content" data-simple="Posts" data-full="3–4 Content">3–4 Content</a>
+        <a href="#engage" data-tab="engage" class="adv">5 Engage</a>
+        <a href="#analytics" data-tab="analytics" data-simple="Results" data-full="6 Analytics">6 Analytics</a>
         <a href="#data" data-tab="data">Data</a>
-        <a href="#method" data-tab="method">Method</a>
+        <a href="#method" data-tab="method" class="adv">Method</a>
       </nav>
     </div>
   </header>

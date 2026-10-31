@@ -38,7 +38,7 @@ export function engagementSummary(entries, today, target, days = 7) {
     days,
     comments: recent.length,
     icpShare: ratio(icp, recent.length),
-    people: new Set(recent.map((e) => e.person.trim().toLowerCase()).filter(Boolean)).size,
+    people: new Set(recent.map((e) => String(e.person ?? '').trim().toLowerCase()).filter(Boolean)).size,
     streak: streak(entries, today, target),
   };
 }

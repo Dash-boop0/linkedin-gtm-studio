@@ -12,7 +12,7 @@ const VERDICT_CLS = { 'double-down': 'won', cut: 'lost', keep: '', 'need-data': 
 
 export function renderAnalytics(ctx) {
   const ws = ctx.ws();
-  const dim = ctx.ui.analyticsDim ?? 'bucket';
+  const dim = ctx.ui.simple ? 'bucket' : ctx.ui.analyticsDim ?? 'bucket';
   const t = totals(ws.posts);
   const groups = performanceBy(ws.posts, dim, { minSample: ws.settings.minSample });
   const label = (k) => (dim === 'bucket' ? BUCKETS.find((b) => b.id === k)?.short ?? k : k);
@@ -21,7 +21,7 @@ export function renderAnalytics(ctx) {
   return `
   <div class="page-head"><div><h1>6 · Measure, double down, cut</h1>
     <p class="muted">Copy each post’s numbers from LinkedIn’s post analytics (or import a CSV on the Data page). Groups need at least ${ws.settings.minSample} posts before a verdict.</p></div></div>
-  <div class="kpis">
+  <div class="kpis adv">
     <div class="kpi"><div class="label">Published</div><div class="value">${t.published}</div><div class="sub">${t.measured} with metrics</div></div>
     <div class="kpi"><div class="label">Impressions</div><div class="value">${fmt(t.impressions)}</div><div class="sub">sum of measured posts</div></div>
     <div class="kpi"><div class="label">Median engagement rate</div><div class="value">${pct(t.medianER)}</div><div class="sub">(reactions+comments+reposts) ÷ impressions</div></div>
@@ -29,7 +29,7 @@ export function renderAnalytics(ctx) {
     <div class="kpi"><div class="label">Inbound leads</div><div class="value">${fmt(t.inbound)}</div><div class="sub">DMs / calls you logged</div></div>
     <div class="kpi"><div class="label">Leads per 1k impressions</div><div class="value">${t.inboundPer1k === null ? 'n/a' : t.inboundPer1k.toFixed(2)}</div><div class="sub">the number that pays</div></div>
   </div>
-  <section class="card"><div class="card-head"><h2>What’s working</h2>${select('Compare by', 'dim', dim, DIMS, { attrs: 'data-change="analytics-dim"' })}</div>
+  <section class="card"><div class="card-head"><h2>What’s working</h2><span class="adv">${select('Compare by', 'dim', dim, DIMS, { attrs: 'data-change="analytics-dim"' })}</span></div>
     ${groups.length ? `
       <div class="chart-box">${horizontalBars({ title: `Median engagement rate by ${dim}`, items: groups.map((g) => ({ label: `${label(g.key)} (${g.n})`, value: g.medianER ?? 0 })), format: (v) => pct(v) })}</div>
       ${table('Verdict = group median vs overall median: ≥1.2× double down, ≤0.8× cut', [

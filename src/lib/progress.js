@@ -4,7 +4,8 @@ import { researchProgress, languageBank } from './research.js';
 import { auditProfile } from './profile.js';
 import { recommendVisual } from './content.js';
 import { engagementSummary } from './engagement.js';
-import { publishedWithMetrics } from './analytics.js';
+import { publishedWithMetrics, engagementRate, performanceBy } from './analytics.js';
+import { startOfWeek, diffDays } from './dates.js';
 
 const clamp = (x) => Math.max(0, Math.min(1, x));
 
@@ -52,4 +53,30 @@ export function playbookProgress(ws, today) {
     const status = p.progress >= 0.999 ? 'done' : p.progress > 0 ? 'in-progress' : 'not-started';
     return { ...s, ...p, status };
   });
+}
+
+/**
+ * Simple mode: the four things that matter this week.
+ * setup (once) · today's comments · this week's posts · Friday numbers.
+ */
+export function weekStatus(ws, today) {
+  const r = researchProgress(ws, { buyers: TARGET_BUYERS, competitors: TARGET_COMPETITORS });
+  const audit = auditProfile(ws.profile, { phrases: languageBank(ws.buyers).phrases.map((p) => p.text), offer: ws.offer });
+  const setup = [
+    { id: 'offer', label: 'Write who you help and what you get them', done: !!(ws.offer.audience.trim() && ws.offer.outcome.trim()), view: 'profile' },
+    { id: 'buyers', label: `Add ${TARGET_BUYERS} dream clients with their problems and words`, done: r.buyersComplete >= TARGET_BUYERS, detail: `${r.buyersComplete}/${TARGET_BUYERS}`, view: 'research' },
+    { id: 'profile', label: 'Fix your profile until it scores 80+', done: audit.score >= 80, detail: `${audit.score}/100`, view: 'profile' },
+  ];
+  const minutesToday = ws.engagement.filter((e) => e.date === today).reduce((s, e) => s + (e.minutes || 0), 0);
+  const weekStart = startOfWeek(today);
+  const thisWeek = ws.posts.filter((p) => p.date && diffDays(weekStart, p.date) >= 0 && diffDays(weekStart, p.date) < 7 && (p.status === 'published' || p.status === 'scheduled'));
+  const missingNumbers = ws.posts.filter((p) => p.status === 'published' && engagementRate(p.metrics) === null && p.date && p.date <= today);
+  const winners = performanceBy(ws.posts, 'bucket', { minSample: ws.settings.minSample }).filter((g) => g.verdict === 'double-down').map((g) => g.key);
+  return {
+    setup,
+    setupDone: setup.every((s) => s.done),
+    today: { minutes: minutesToday, target: ws.settings.dailyEngageMinutes, streak: engagementSummary(ws.engagement, today, ws.settings.dailyEngageMinutes).streak },
+    posts: { count: thisWeek.length, target: ws.settings.weeklyPosts, items: thisWeek },
+    friday: { missingNumbers: missingNumbers.length, winners },
+  };
 }

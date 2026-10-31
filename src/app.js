@@ -4,6 +4,7 @@ import { emptyState, validateState, activeWorkspace, updateWorkspace, appendLog 
 import { systemToday, formatDate } from './lib/dates.js';
 import { formData } from './ui/h.js';
 import { renderOverview } from './ui/overview.js';
+import { renderHome } from './ui/home.js';
 import { renderResearch, researchForms, researchActions, researchChanges } from './ui/research.js';
 import { renderProfile, profileForms, profileActions, profileLive } from './ui/profile.js';
 import { renderContent, contentForms, contentActions, contentChanges, contentLive } from './ui/content.js';
@@ -14,12 +15,14 @@ import { renderMethod } from './ui/method.js';
 
 const SAMPLE_URL = 'sample-data/sample-workspace.json';
 const START_EMPTY_KEY = `${STORAGE_KEY}.startEmpty`;
-const RENDERERS = { overview: renderOverview, research: renderResearch, profile: renderProfile, content: renderContent, engage: renderEngage, analytics: renderAnalytics, data: renderData, method: renderMethod };
+const SIMPLE_KEY = `${STORAGE_KEY}.simple`;
+const RENDERERS = { overview: (c) => (c.ui.simple ? renderHome(c) : renderOverview(c)), research: renderResearch, profile: renderProfile, content: renderContent, engage: renderEngage, analytics: renderAnalytics, data: renderData, method: renderMethod };
 const FORMS = { ...researchForms, ...profileForms, ...contentForms, ...engageForms, ...analyticsForms, ...dataForms };
 const CHANGES = { ...researchChanges, ...contentChanges, ...analyticsChanges };
 const LIVE = { ...profileLive, ...contentLive };
 
-const ctx = { state: emptyState(), storageOk: true, ui: { view: 'overview', edit: {} } };
+const ctx = { state: emptyState(), storageOk: true, ui: { view: 'overview', edit: {}, simple: true } };
+try { ctx.ui.simple = localStorage.getItem(SIMPLE_KEY) !== '0'; } catch { /* default: simple */ }
 ctx.ws = () => activeWorkspace(ctx.state);
 // The sample is pinned to its own date so its streaks and calendars stay meaningful.
 ctx.today = () => (ctx.state.meta?.synthetic && ctx.state.meta.demoToday) || systemToday();
@@ -88,6 +91,9 @@ function renderBanner() {
 
 function render() {
   renderBanner();
+  document.body.classList.toggle('simple', ctx.ui.simple);
+  document.getElementById('mode-toggle').textContent = ctx.ui.simple ? 'Show all tools' : 'Simple view';
+  document.querySelectorAll('#tabs a[data-simple]').forEach((a) => { a.textContent = ctx.ui.simple ? a.dataset.simple : a.dataset.full; });
   document.querySelectorAll('#tabs a').forEach((a) => (a.dataset.tab === ctx.ui.view ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
   document.getElementById('view').innerHTML = RENDERERS[ctx.ui.view](ctx);
 }
@@ -111,6 +117,11 @@ const ACTIONS = {
     c.update((ws) => ({ ...ws, [el.dataset.type]: ws[el.dataset.type].filter((x) => x.id !== el.dataset.id), ...(el.dataset.type === 'competitors' ? { compPosts: ws.compPosts.filter((p) => p.competitorId !== el.dataset.id) } : {}) }), 'Deleted.');
   },
   'start-own': (c) => c.reset(),
+  'toggle-simple': (c) => {
+    c.ui.simple = !c.ui.simple;
+    try { localStorage.setItem(SIMPLE_KEY, c.ui.simple ? '1' : '0'); } catch { /* per-tab only */ }
+    render();
+  },
 };
 
 function init() {

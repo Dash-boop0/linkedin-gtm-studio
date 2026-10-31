@@ -400,3 +400,11 @@ input[type="number"], input[type="url"] { width: 100%; padding: 7px 10px; border
 .site-tabs { overflow-x: auto; }
 .hint .btn.link { white-space: normal; text-align: left; overflow-wrap: anywhere; }
 .step.is-done .meter span { background: var(--good); }
+body.simple .adv { display: none !important; }
+.todo { list-style: none; margin: 0; padding: 0; }
+.todo li { display: flex; gap: 10px; align-items: flex-start; padding: 7px 0; border-bottom: 1px solid var(--border); font-size: .92rem; }
+.todo li:last-child { border-bottom: 0; }
+.tick { flex: none; width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--border); display: inline-grid; place-items: center; font-size: .75rem; font-weight: 800; vertical-align: -3px; }
+.tick.is-done { background: var(--good); border-color: var(--good); color: #fff; }
+.card-head h2 .tick { margin-right: 4px; }
+#view > .grid + .card, #view > .card + .grid, #view > .grid + .grid { margin-top: 16px; }

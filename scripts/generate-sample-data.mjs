@@ -89,7 +89,7 @@ const posts = PLAN.map(([bucket, kind, visual, title], i) => {
   };
 });
 const UPCOMING = [
-  ['problems', 'opinion', 'text-only', 'draft', 'The ghostwriter didn’t understand your product. That’s a briefing problem.'],
+  ['problems', 'opinion', 'text-only', 'scheduled', 'The ghostwriter didn’t understand your product. That’s a briefing problem.'],
   ['expertise', 'process', 'steps-graphic', 'scheduled', 'How to turn one sales call into three posts'],
   ['industry', 'opinion', 'text-only', 'idea', 'React to this week’s industry news with my take'],
   ['proof', 'result', 'screenshot', 'draft', 'Before → after: a founder profile rewrite (illustrative)'],

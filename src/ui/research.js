@@ -41,7 +41,7 @@ export function renderResearch(ctx) {
   return `
   <div class="page-head"><div><h1>1 · Research buyers and competitors</h1>
     <p class="muted">List ${TARGET_BUYERS} people you want as clients. Read their posts and comments; note what they struggle with, what they tried, and the words they use. Then study ${TARGET_COMPETITORS} competitors reaching them.</p></div>
-    <div class="chips">${pill(`${prog.buyersComplete}/${TARGET_BUYERS} buyers complete`)} ${pill(`${prog.competitorsBrokenDown}/${TARGET_COMPETITORS} competitors broken down`)}</div></div>
+    <div class="chips">${pill(`${prog.buyersComplete}/${TARGET_BUYERS} buyers complete`)} <span class="adv">${pill(`${prog.competitorsBrokenDown}/${TARGET_COMPETITORS} competitors broken down`)}</span></div></div>
 
   <div class="grid grid-2">
     <section class="card"><div class="card-head"><h2>Dream buyers</h2><span class="muted small">${ws.buyers.length} listed</span></div>
@@ -65,7 +65,7 @@ export function renderResearch(ctx) {
     </div>
   </section>
 
-  <section class="card"><div class="card-head"><h2>Competitor post breakdown</h2><span class="muted small">${ws.compPosts.length} posts from ${ws.competitors.length} competitors</span></div>
+  <section class="card adv"><div class="card-head"><h2>Competitor post breakdown</h2><span class="muted small">${ws.compPosts.length} posts from ${ws.competitors.length} competitors</span></div>
     <p class="muted small">Engagement score = reactions × ${w.reactions} + comments × ${w.comments} + reposts × ${w.reposts} (weights in Data → Settings). Groups are ranked by median score, so one viral post doesn’t dominate.</p>
     <div class="filter-row">${select('Break down by', 'dim', dim, DIMENSIONS, { attrs: 'data-change="research-dim"' })}</div>
     ${groups.length ? `<div class="chart-box">${horizontalBars({ title: `Median engagement score by ${dim}`, items: groups.map((g) => ({ label: `${g.key} (${g.n})`, value: g.median ?? 0 })), format: (v) => fmt(v) })}</div>` : empty('No competitor posts yet', 'Add a competitor and log their best-performing posts below.')}
@@ -76,7 +76,7 @@ export function renderResearch(ctx) {
     ], top)}` : ''}
   </section>
 
-  <div class="grid grid-2">
+  <div class="grid grid-2 adv">
     <section class="card"><div class="card-head"><h2>Competitors</h2></div>
       ${ws.competitors.length ? `<ul class="timeline">${ws.competitors.map((c) => `<li><div class="row-between"><span><strong>${esc(c.name)}</strong> <span class="muted small">${ws.compPosts.filter((p) => p.competitorId === c.id).length} posts</span></span>${btn('Delete', 'delete', { cls: 'small danger', data: { type: 'competitors', id: c.id } })}</div></li>`).join('')}</ul>` : '<p class="muted small">None yet.</p>'}
       <form data-form="competitor" class="form-grid mt">${input('Competitor name', 'name', '', { attrs: 'required' })}${input('Profile URL', 'url', '', { type: 'url' })}<div class="actions full">${btn('Add competitor', '', { cls: 'primary', type: 'submit' })}</div></form>
@@ -97,7 +97,7 @@ export function renderResearch(ctx) {
     </section>
   </div>
 
-  <section class="card"><div class="card-head"><h2>Ideas from outside LinkedIn</h2><span class="muted small">X, newsletters, podcasts — build on them with your experience, examples or opinion.</span></div>
+  <section class="card adv"><div class="card-head"><h2>Ideas from outside LinkedIn</h2><span class="muted small">X, newsletters, podcasts — build on them with your experience, examples or opinion.</span></div>
     ${ws.outsideIdeas.length ? table('Saved ideas', [
       { label: 'Idea', html: (o) => `<div class="cell-main">${esc(o.summary)}</div><div class="cell-sub">${esc(o.source)}</div>` },
       { label: 'Your take', html: (o) => (o.myTake ? esc(o.myTake) : '<span class="badge issue">Add your take</span>') },

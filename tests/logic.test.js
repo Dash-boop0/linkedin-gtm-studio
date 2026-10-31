@@ -226,3 +226,26 @@ test('sample workspace is valid, labelled synthetic, and exercises every verdict
   assert.equal(steps.length, 6);
   assert.ok(steps.find((s) => s.id === 'profile').progress < 0.6, 'sample profile is deliberately weak');
 });
+
+test('weekStatus: setup, today, this week and Friday numbers', async () => {
+  const { weekStatus } = await import('../src/lib/progress.js');
+  const ws = emptyWorkspace();
+  let s = weekStatus(ws, '2026-10-30');
+  assert.equal(s.setupDone, false);
+  assert.deepEqual(s.setup.map((x) => x.done), [false, false, false]);
+  ws.offer = { audience: 'SaaS founders', outcome: 'book calls', proof: '' };
+  ws.engagement = [{ date: '2026-10-30', minutes: 10 }, { date: '2026-10-30', minutes: 5 }, { date: '2026-10-29', minutes: 15 }];
+  const m = (impressions) => ({ impressions, reactions: impressions ? 10 : null, comments: null, reposts: null });
+  ws.posts = [
+    { date: '2026-10-27', status: 'published', bucket: 'problems', metrics: m(null) }, // Monday this week, no numbers
+    { date: '2026-10-31', status: 'scheduled', bucket: 'proof', metrics: m(null) },
+    { date: '2026-10-25', status: 'published', bucket: 'proof', metrics: m(1000) }, // last week
+    { date: '2026-10-28', status: 'draft', bucket: 'proof', metrics: m(null) },
+  ];
+  s = weekStatus(ws, '2026-10-30');
+  assert.equal(s.setup[0].done, true);
+  assert.equal(s.today.minutes, 15);
+  assert.equal(s.today.streak, 2);
+  assert.equal(s.posts.count, 2);
+  assert.equal(s.friday.missingNumbers, 1);
+});

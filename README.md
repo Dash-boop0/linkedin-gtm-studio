@@ -11,6 +11,13 @@ Built for freelancers who run LinkedIn for themselves **and** for clients: each 
 
 ![Overview of the six-step playbook with progress and next actions](docs/screenshot.png)
 
+## Simple view (default)
+
+Opens on a **This week** screen with just four things: set up once (offer, 10 dream clients, profile 80+),
+comment today (log it right there), post this week, and add Friday numbers. The tabs are cut down to
+Home · Dream clients · Profile · Posts · Results · Data. **Show all tools** in the header brings back everything below;
+the choice is remembered in the browser.
+
 ## Features
 
 | Step | In the app |
@@ -69,7 +76,7 @@ views in `src/ui/`, state in `localStorage`. See [docs/ARCHITECTURE.md](docs/ARC
 [docs/DEMO.md](docs/DEMO.md) for a 2-minute walkthrough.
 
 ```bash
-npm test     # node --test, 32 tests: every score, verdict, importer and the CLI against hand-computed cases
+npm test     # node --test, 33 tests: every score, verdict, importer and the CLI against hand-computed cases
 npm run generate   # rebuild the synthetic sample in sample-data/
 ```
 
