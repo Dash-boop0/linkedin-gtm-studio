@@ -1,0 +1,15 @@
+{
+  "name": "linkedin-gtm-studio",
+  "version": "1.0.0",
+  "description": "A working studio for the LinkedIn client-acquisition playbook: buyer research, profile audit, content buckets, daily engagement and analytics.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "generate": "node scripts/generate-sample-data.mjs",
+    "start": "python3 -m http.server 8000",
+    "audit-profile": "node scripts/cli.mjs audit-profile",
+    "lint-post": "node scripts/cli.mjs lint-post"
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinkedIn GTM Studio</title>
+  <meta name="description" content="A working studio for the LinkedIn client-acquisition playbook: buyer research, competitor post breakdowns, profile audit, four content buckets, daily comments and analytics. Runs in the browser; nothing is scraped or posted.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232F5BEA'/%3E%3Cpath d='M10 13v10M10 9v.5M15 23v-6a3.5 3.5 0 0 1 7 0v6M15 13v10' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-header__top">
+        <a class="site-brand" href="#overview"><svg class="site-brand__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="7"/><path class="glyph-s" stroke-width="2.6" d="M10 13v10M10 9v.5M15 23v-6a3.5 3.5 0 0 1 7 0v6M15 13v10"/></svg><span class="site-brand__name">LinkedIn GTM Studio</span></a>
+        <div class="site-header__extra"><label for="ws-switch" class="sr-only">Workspace</label><select id="ws-switch" class="ws-switch"></select></div>
+        <a class="site-home" href="https://dash-boop0.github.io/"><span aria-hidden="true">←</span> All projects</a>
+      </div>
+      <nav class="site-tabs" id="tabs" aria-label="Main">
+        <a href="#overview" data-tab="overview">Overview</a>
+        <a href="#research" data-tab="research">1 Research</a>
+        <a href="#profile" data-tab="profile">2 Profile</a>
+        <a href="#content" data-tab="content">3–4 Content</a>
+        <a href="#engage" data-tab="engage">5 Engage</a>
+        <a href="#analytics" data-tab="analytics">6 Analytics</a>
+        <a href="#data" data-tab="data">Data</a>
+        <a href="#method" data-tab="method">Method</a>
+      </nav>
+    </div>
+  </header>
+  <div class="site-banner" id="banner"></div>
+  <main id="main" class="site-main" tabindex="-1">
+    <div id="view"><p class="muted">Loading…</p></div>
+    <noscript><p class="errors">This app needs JavaScript enabled.</p></noscript>
+  </main>
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <nav class="site-footer__links" aria-label="Portfolio links">
+        <a href="https://dash-boop0.github.io/"><span aria-hidden="true">←</span> All projects</a>
+        <a href="https://github.com/Dash-boop0/linkedin-gtm-studio">Source on GitHub</a>
+        <a href="https://github.com/Dash-boop0/linkedin-gtm-studio/blob/main/LICENSE">MIT licence</a>
+      </nav>
+      <p class="site-footer__note">Portfolio project by Dash-boop0 · Sample data is synthetic · Your data stays in this browser</p>
+    </div>
+  </footer>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

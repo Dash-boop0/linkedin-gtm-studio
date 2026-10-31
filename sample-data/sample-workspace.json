@@ -1,0 +1,1216 @@
+{
+  "version": 1,
+  "meta": {
+    "synthetic": true,
+    "demoToday": "2026-10-30",
+    "note": "All people, companies, posts and metrics are fictional and illustrative."
+  },
+  "activeId": "ws_sample",
+  "workspaces": [
+    {
+      "id": "ws_sample",
+      "name": "Sample: founder-led content freelancer (synthetic)",
+      "offer": {
+        "audience": "seed-stage B2B SaaS founders",
+        "outcome": "turn LinkedIn into a pipeline instead of posting into the void",
+        "proof": "illustrative sample — replace with your real proof"
+      },
+      "buyers": [
+        {
+          "id": "buyer_s1",
+          "name": "Rhea Kapoor (synthetic)",
+          "role": "Founder & CEO",
+          "company": "Ledgerleaf (synthetic)",
+          "url": "https://www.example.com/buyer-1",
+          "pains": [
+            "founder-led sales doesn’t scale",
+            "no time to post consistently"
+          ],
+          "tried": [
+            "hired an agency that posted generic content"
+          ],
+          "phrases": [
+            "posting into the void",
+            "I know I should be on LinkedIn"
+          ],
+          "notes": "Fictional buyer for the demo."
+        },
+        {
+          "id": "buyer_s2",
+          "name": "Arjun Mehta (synthetic)",
+          "role": "Co-founder",
+          "company": "Shipwise (synthetic)",
+          "url": "https://www.example.com/buyer-2",
+          "pains": [
+            "no time to post consistently",
+            "pipeline depends on referrals"
+          ],
+          "tried": [
+            "scheduled posts with a tool for a month"
+          ],
+          "phrases": [
+            "posting into the void",
+            "every deal comes from referrals"
+          ],
+          "notes": "Fictional buyer for the demo."
+        },
+        {
+          "id": "buyer_s3",
+          "name": "Meera Iyer (synthetic)",
+          "role": "CEO",
+          "company": "Clinicflow (synthetic)",
+          "url": "https://www.example.com/buyer-3",
+          "pains": [
+            "content gets likes but no leads",
+            "doesn’t know what to write about"
+          ],
+          "tried": [
+            "wrote thought-leadership essays"
+          ],
+          "phrases": [
+            "likes but no leads",
+            "vanity metrics"
+          ],
+          "notes": "Fictional buyer for the demo."
+        },
+        {
+          "id": "buyer_s4",
+          "name": "Kabir Shah (synthetic)",
+          "role": "Founder",
+          "company": "Tallystack (synthetic)",
+          "url": "https://www.example.com/buyer-4",
+          "pains": [
+            "pipeline depends on referrals",
+            "founder-led sales doesn’t scale"
+          ],
+          "tried": [
+            "cold email sequences"
+          ],
+          "phrases": [
+            "every deal comes from referrals",
+            "I hate selling"
+          ],
+          "notes": "Fictional buyer for the demo."
+        },
+        {
+          "id": "buyer_s5",
+          "name": "Nisha Rao (synthetic)",
+          "role": "Co-founder & CEO",
+          "company": "Formbase (synthetic)",
+          "url": "https://www.example.com/buyer-5",
+          "pains": [
+            "content gets likes but no leads",
+            "no time to post consistently"
+          ],
+          "tried": [
+            "hired an agency that posted generic content",
+            "ghostwriter who didn’t understand the product"
+          ],
+          "phrases": [
+            "likes but no leads",
+            "sounds like everyone else"
+          ],
+          "notes": "Fictional buyer for the demo."
+        },
+        {
+          "id": "buyer_s6",
+          "name": "Dev Malhotra (synthetic)",
+          "role": "Founder",
+          "company": "Rentroll (synthetic)",
+          "url": "https://www.example.com/buyer-6",
+          "pains": [
+            "doesn’t know what to write about",
+            "profile doesn’t explain the product"
+          ],
+          "tried": [
+            "reposted company page updates"
+          ],
+          "phrases": [
+            "I know I should be on LinkedIn",
+            "nobody gets what we do"
+          ],
+          "notes": "Fictional buyer for the demo."
+        },
+        {
+          "id": "buyer_s7",
+          "name": "Tara Nair (synthetic)",
+          "role": "CEO",
+          "company": "Quoteloop (synthetic)",
+          "url": "https://www.example.com/buyer-7",
+          "pains": [
+            "profile doesn’t explain the product",
+            "content gets likes but no leads"
+          ],
+          "tried": [
+            "wrote thought-leadership essays"
+          ],
+          "phrases": [
+            "nobody gets what we do",
+            "vanity metrics"
+          ],
+          "notes": "Fictional buyer for the demo."
+        },
+        {
+          "id": "buyer_s8",
+          "name": "Vikram Bose (synthetic)",
+          "role": "Co-founder",
+          "company": "Stackyard (synthetic)",
+          "url": "https://www.example.com/buyer-8",
+          "pains": [
+            "founder-led sales doesn’t scale",
+            "pipeline depends on referrals"
+          ],
+          "tried": [
+            "cold email sequences",
+            "scheduled posts with a tool for a month"
+          ],
+          "phrases": [
+            "I hate selling",
+            "every deal comes from referrals"
+          ],
+          "notes": "Fictional buyer for the demo."
+        },
+        {
+          "id": "buyer_s9",
+          "name": "Ananya Gupta (synthetic)",
+          "role": "Founder & CEO",
+          "company": "Hirelane (synthetic)",
+          "url": "https://www.example.com/buyer-9",
+          "pains": [
+            "no time to post consistently",
+            "doesn’t know what to write about"
+          ],
+          "tried": [
+            "ghostwriter who didn’t understand the product"
+          ],
+          "phrases": [
+            "posting into the void",
+            "sounds like everyone else"
+          ],
+          "notes": "Fictional buyer for the demo."
+        },
+        {
+          "id": "buyer_s10",
+          "name": "Rohan Pillai (synthetic)",
+          "role": "CEO",
+          "company": "Metricly (synthetic)",
+          "url": "https://www.example.com/buyer-10",
+          "pains": [
+            "content gets likes but no leads",
+            "founder-led sales doesn’t scale"
+          ],
+          "tried": [
+            "hired an agency that posted generic content"
+          ],
+          "phrases": [
+            "likes but no leads",
+            "I know I should be on LinkedIn"
+          ],
+          "notes": "Fictional buyer for the demo."
+        }
+      ],
+      "competitors": [
+        {
+          "id": "comp_s11",
+          "name": "Northline Content (synthetic)",
+          "url": "https://www.example.org/competitor-1",
+          "audience": "B2B SaaS founders"
+        },
+        {
+          "id": "comp_s12",
+          "name": "Ghostloop Studio (synthetic)",
+          "url": "https://www.example.org/competitor-2",
+          "audience": "B2B SaaS founders"
+        },
+        {
+          "id": "comp_s13",
+          "name": "Foundervoice Co (synthetic)",
+          "url": "https://www.example.org/competitor-3",
+          "audience": "B2B SaaS founders"
+        },
+        {
+          "id": "comp_s14",
+          "name": "Pipeline Pages (synthetic)",
+          "url": "https://www.example.org/competitor-4",
+          "audience": "B2B SaaS founders"
+        },
+        {
+          "id": "comp_s15",
+          "name": "Brightpost Agency (synthetic)",
+          "url": "https://www.example.org/competitor-5",
+          "audience": "B2B SaaS founders"
+        }
+      ],
+      "compPosts": [
+        {
+          "id": "cp_s16",
+          "competitorId": "comp_s11",
+          "date": "2026-09-30",
+          "topic": "lead generation",
+          "angle": "mistakes",
+          "hook": "Stop posting “thought leadership” if you want leads.",
+          "graphic": "text-only",
+          "reactions": 237,
+          "comments": 41,
+          "reposts": 11,
+          "url": "https://www.example.org/post-1"
+        },
+        {
+          "id": "cp_s17",
+          "competitorId": "comp_s11",
+          "date": "2026-10-08",
+          "topic": "founder-led sales",
+          "angle": "case-study",
+          "hook": "How I turned one founder’s comments into 9 sales calls",
+          "graphic": "screenshot",
+          "reactions": 227,
+          "comments": 52,
+          "reposts": 12,
+          "url": "https://www.example.org/post-2"
+        },
+        {
+          "id": "cp_s18",
+          "competitorId": "comp_s11",
+          "date": "2026-10-16",
+          "topic": "profile",
+          "angle": "opinion",
+          "hook": "Your profile is a landing page. Most founders treat it like a CV.",
+          "graphic": "side-by-side",
+          "reactions": 78,
+          "comments": 10,
+          "reposts": 4,
+          "url": "https://www.example.org/post-3"
+        },
+        {
+          "id": "cp_s19",
+          "competitorId": "comp_s11",
+          "date": "2026-10-02",
+          "topic": "writing",
+          "angle": "list",
+          "hook": "7 hooks I reuse every week (steal them)",
+          "graphic": "carousel",
+          "reactions": 125,
+          "comments": 32,
+          "reposts": 8,
+          "url": "https://www.example.org/post-4"
+        },
+        {
+          "id": "cp_s20",
+          "competitorId": "comp_s12",
+          "date": "2026-10-18",
+          "topic": "writing",
+          "angle": "list",
+          "hook": "7 hooks I reuse every week (steal them)",
+          "graphic": "carousel",
+          "reactions": 79,
+          "comments": 12,
+          "reposts": 4,
+          "url": "https://www.example.org/post-5"
+        },
+        {
+          "id": "cp_s21",
+          "competitorId": "comp_s12",
+          "date": "2026-10-04",
+          "topic": "founder-led sales",
+          "angle": "story",
+          "hook": "Last month a founder told me LinkedIn “doesn’t work for B2B”.",
+          "graphic": "photo",
+          "reactions": 153,
+          "comments": 26,
+          "reposts": 10,
+          "url": "https://www.example.org/post-6"
+        },
+        {
+          "id": "cp_s22",
+          "competitorId": "comp_s12",
+          "date": "2026-10-08",
+          "topic": "lead generation",
+          "angle": "mistakes",
+          "hook": "Why are your posts getting likes but no DMs?",
+          "graphic": "text-only",
+          "reactions": 219,
+          "comments": 44,
+          "reposts": 12,
+          "url": "https://www.example.org/post-7"
+        },
+        {
+          "id": "cp_s23",
+          "competitorId": "comp_s12",
+          "date": "2026-10-18",
+          "topic": "writing",
+          "angle": "how-to",
+          "hook": "How to write a LinkedIn post in 20 minutes: my 4-step process",
+          "graphic": "steps-graphic",
+          "reactions": 103,
+          "comments": 24,
+          "reposts": 5,
+          "url": "https://www.example.org/post-8"
+        },
+        {
+          "id": "cp_s24",
+          "competitorId": "comp_s13",
+          "date": "2026-10-17",
+          "topic": "writing",
+          "angle": "how-to",
+          "hook": "How to write a LinkedIn post in 20 minutes: my 4-step process",
+          "graphic": "steps-graphic",
+          "reactions": 155,
+          "comments": 25,
+          "reposts": 6,
+          "url": "https://www.example.org/post-9"
+        },
+        {
+          "id": "cp_s25",
+          "competitorId": "comp_s13",
+          "date": "2026-10-18",
+          "topic": "platform changes",
+          "angle": "news-take",
+          "hook": "The new LinkedIn feed update, explained for founders",
+          "graphic": "text-only",
+          "reactions": 39,
+          "comments": 5,
+          "reposts": 1,
+          "url": "https://www.example.org/post-10"
+        },
+        {
+          "id": "cp_s26",
+          "competitorId": "comp_s13",
+          "date": "2026-10-18",
+          "topic": "lead generation",
+          "angle": "case-study",
+          "hook": "We grew a client from 0 to 40 inbound leads in 90 days",
+          "graphic": "screenshot",
+          "reactions": 352,
+          "comments": 71,
+          "reposts": 12,
+          "url": "https://www.example.org/post-11"
+        },
+        {
+          "id": "cp_s27",
+          "competitorId": "comp_s13",
+          "date": "2026-09-23",
+          "topic": "process",
+          "angle": "behind-the-scenes",
+          "hook": "Behind the scenes: how we plan a month of founder content",
+          "graphic": "carousel",
+          "reactions": 107,
+          "comments": 25,
+          "reposts": 4,
+          "url": "https://www.example.org/post-12"
+        },
+        {
+          "id": "cp_s28",
+          "competitorId": "comp_s14",
+          "date": "2026-10-08",
+          "topic": "process",
+          "angle": "behind-the-scenes",
+          "hook": "Behind the scenes: how we plan a month of founder content",
+          "graphic": "carousel",
+          "reactions": 66,
+          "comments": 11,
+          "reposts": 2,
+          "url": "https://www.example.org/post-13"
+        },
+        {
+          "id": "cp_s29",
+          "competitorId": "comp_s14",
+          "date": "2026-10-09",
+          "topic": "lead generation",
+          "angle": "mistakes",
+          "hook": "Stop posting “thought leadership” if you want leads.",
+          "graphic": "text-only",
+          "reactions": 96,
+          "comments": 21,
+          "reposts": 5,
+          "url": "https://www.example.org/post-14"
+        },
+        {
+          "id": "cp_s30",
+          "competitorId": "comp_s14",
+          "date": "2026-09-24",
+          "topic": "founder-led sales",
+          "angle": "case-study",
+          "hook": "How I turned one founder’s comments into 9 sales calls",
+          "graphic": "screenshot",
+          "reactions": 275,
+          "comments": 39,
+          "reposts": 8,
+          "url": "https://www.example.org/post-15"
+        },
+        {
+          "id": "cp_s31",
+          "competitorId": "comp_s14",
+          "date": "2026-10-25",
+          "topic": "profile",
+          "angle": "opinion",
+          "hook": "Your profile is a landing page. Most founders treat it like a CV.",
+          "graphic": "side-by-side",
+          "reactions": 105,
+          "comments": 24,
+          "reposts": 7,
+          "url": "https://www.example.org/post-16"
+        },
+        {
+          "id": "cp_s32",
+          "competitorId": "comp_s15",
+          "date": "2026-10-20",
+          "topic": "profile",
+          "angle": "opinion",
+          "hook": "Your profile is a landing page. Most founders treat it like a CV.",
+          "graphic": "side-by-side",
+          "reactions": 94,
+          "comments": 24,
+          "reposts": 5,
+          "url": "https://www.example.org/post-17"
+        },
+        {
+          "id": "cp_s33",
+          "competitorId": "comp_s15",
+          "date": "2026-10-06",
+          "topic": "writing",
+          "angle": "list",
+          "hook": "7 hooks I reuse every week (steal them)",
+          "graphic": "carousel",
+          "reactions": 113,
+          "comments": 25,
+          "reposts": 2,
+          "url": "https://www.example.org/post-18"
+        },
+        {
+          "id": "cp_s34",
+          "competitorId": "comp_s15",
+          "date": "2026-09-27",
+          "topic": "founder-led sales",
+          "angle": "story",
+          "hook": "Last month a founder told me LinkedIn “doesn’t work for B2B”.",
+          "graphic": "photo",
+          "reactions": 147,
+          "comments": 22,
+          "reposts": 6,
+          "url": "https://www.example.org/post-19"
+        },
+        {
+          "id": "cp_s35",
+          "competitorId": "comp_s15",
+          "date": "2026-10-18",
+          "topic": "lead generation",
+          "angle": "mistakes",
+          "hook": "Why are your posts getting likes but no DMs?",
+          "graphic": "text-only",
+          "reactions": 117,
+          "comments": 17,
+          "reposts": 6,
+          "url": "https://www.example.org/post-20"
+        }
+      ],
+      "outsideIdeas": [
+        {
+          "id": "idea_s36",
+          "source": "X",
+          "url": "https://www.example.net/x-post-1",
+          "summary": "A thread arguing that founder-led content beats paid ads for early B2B (illustrative)",
+          "myTake": "True only if the founder posts about buyer problems, not the product",
+          "bucket": "industry"
+        },
+        {
+          "id": "idea_s37",
+          "source": "X",
+          "url": "https://www.example.net/x-post-2",
+          "summary": "A chart of rising AI-written content on social feeds (illustrative)",
+          "myTake": "Specific stories are the only thing AI can’t fake — use yours",
+          "bucket": "industry"
+        },
+        {
+          "id": "idea_s38",
+          "source": "Newsletter",
+          "url": "https://www.example.net/newsletter-1",
+          "summary": "A breakdown of how buyers research vendors before a first call (illustrative)",
+          "myTake": "",
+          "bucket": "expertise"
+        }
+      ],
+      "profile": {
+        "headline": "Founder-led content for B2B SaaS | Writer",
+        "banner": "Photo of me at my desk",
+        "about": "I am a content writer with 4 years of experience. I love writing and storytelling. I have worked with startups across industries. Feel free to connect!",
+        "featured": [
+          {
+            "id": "feat_s92",
+            "kind": "post",
+            "title": "My most-liked post",
+            "url": "https://www.example.com/featured-1"
+          }
+        ]
+      },
+      "posts": [
+        {
+          "id": "post_s39",
+          "date": "2026-09-18",
+          "bucket": "problems",
+          "kind": "opinion",
+          "visual": "text-only",
+          "status": "published",
+          "title": "Likes but no leads? Your posts are written for peers, not buyers.",
+          "hook": "Likes but no leads? Your posts are written for peers, not buyers.",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 3239,
+            "reactions": 111,
+            "comments": 34,
+            "reposts": 8,
+            "profileViews": 39,
+            "inbound": 1
+          }
+        },
+        {
+          "id": "post_s40",
+          "date": "2026-09-21",
+          "bucket": "proof",
+          "kind": "result",
+          "visual": "screenshot",
+          "status": "published",
+          "title": "From posting into the void to 6 inbound calls: a founder’s first 60 days (illustrative)",
+          "hook": "From posting into the void to 6 inbound calls: a founder’s first 60 days (illustrative)",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 2116,
+            "reactions": 95,
+            "comments": 28,
+            "reposts": 6,
+            "profileViews": 25,
+            "inbound": 1
+          }
+        },
+        {
+          "id": "post_s41",
+          "date": "2026-09-24",
+          "bucket": "expertise",
+          "kind": "process",
+          "visual": "steps-graphic",
+          "status": "published",
+          "title": "How I write a founder post in 25 minutes: 4 steps",
+          "hook": "How I write a founder post in 25 minutes: 4 steps",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 2000,
+            "reactions": 39,
+            "comments": 12,
+            "reposts": 3,
+            "profileViews": 24,
+            "inbound": 0
+          }
+        },
+        {
+          "id": "post_s42",
+          "date": "2026-09-27",
+          "bucket": "industry",
+          "kind": "opinion",
+          "visual": "text-only",
+          "status": "published",
+          "title": "Everyone is talking about the new feed update. Here’s what changes for founders.",
+          "hook": "Everyone is talking about the new feed update. Here’s what changes for founders.",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 2564,
+            "reactions": 36,
+            "comments": 11,
+            "reposts": 3,
+            "profileViews": 31,
+            "inbound": 0
+          }
+        },
+        {
+          "id": "post_s43",
+          "date": "2026-09-30",
+          "bucket": "problems",
+          "kind": "opinion",
+          "visual": "text-only",
+          "status": "published",
+          "title": "Every deal comes from referrals? That’s a pipeline risk, not a strength.",
+          "hook": "Every deal comes from referrals? That’s a pipeline risk, not a strength.",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 2634,
+            "reactions": 95,
+            "comments": 29,
+            "reposts": 7,
+            "profileViews": 32,
+            "inbound": 1
+          }
+        },
+        {
+          "id": "post_s44",
+          "date": "2026-10-03",
+          "bucket": "expertise",
+          "kind": "walkthrough",
+          "visual": "carousel",
+          "status": "published",
+          "title": "5 profile fixes that make founders easier to buy from",
+          "hook": "5 profile fixes that make founders easier to buy from",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 1430,
+            "reactions": 29,
+            "comments": 9,
+            "reposts": 2,
+            "profileViews": 17,
+            "inbound": 0
+          }
+        },
+        {
+          "id": "post_s45",
+          "date": "2026-10-06",
+          "bucket": "proof",
+          "kind": "personal",
+          "visual": "photo",
+          "status": "published",
+          "title": "I lost a client last month. Here’s what I changed.",
+          "hook": "I lost a client last month. Here’s what I changed.",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 2659,
+            "reactions": 153,
+            "comments": 46,
+            "reposts": 11,
+            "profileViews": 32,
+            "inbound": 2
+          }
+        },
+        {
+          "id": "post_s46",
+          "date": "2026-10-09",
+          "bucket": "problems",
+          "kind": "comparison",
+          "visual": "side-by-side",
+          "status": "published",
+          "title": "Thought leadership vs buyer-problem posts: same founder, two weeks each",
+          "hook": "Thought leadership vs buyer-problem posts: same founder, two weeks each",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 2275,
+            "reactions": 68,
+            "comments": 21,
+            "reposts": 5,
+            "profileViews": 27,
+            "inbound": 1
+          }
+        },
+        {
+          "id": "post_s47",
+          "date": "2026-10-12",
+          "bucket": "industry",
+          "kind": "opinion",
+          "visual": "text-only",
+          "status": "published",
+          "title": "AI-written posts are flooding the feed. Specific stories still win.",
+          "hook": "AI-written posts are flooding the feed. Specific stories still win.",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 2730,
+            "reactions": 42,
+            "comments": 13,
+            "reposts": 3,
+            "profileViews": 33,
+            "inbound": 0
+          }
+        },
+        {
+          "id": "post_s48",
+          "date": "2026-10-15",
+          "bucket": "expertise",
+          "kind": "walkthrough",
+          "visual": "carousel",
+          "status": "published",
+          "title": "The 15-minute daily comment routine I give every client",
+          "hook": "The 15-minute daily comment routine I give every client",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 3128,
+            "reactions": 57,
+            "comments": 17,
+            "reposts": 4,
+            "profileViews": 38,
+            "inbound": 0
+          }
+        },
+        {
+          "id": "post_s49",
+          "date": "2026-10-18",
+          "bucket": "problems",
+          "kind": "opinion",
+          "visual": "text-only",
+          "status": "published",
+          "title": "I know I should be on LinkedIn — the sentence I hear from every founder",
+          "hook": "I know I should be on LinkedIn — the sentence I hear from every founder",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 3997,
+            "reactions": 128,
+            "comments": 39,
+            "reposts": 9,
+            "profileViews": 48,
+            "inbound": 2
+          }
+        },
+        {
+          "id": "post_s50",
+          "date": "2026-10-21",
+          "bucket": "proof",
+          "kind": "result",
+          "visual": "screenshot",
+          "status": "published",
+          "title": "What 90 days of buyer-problem posts did for one founder’s inbound (illustrative)",
+          "hook": "What 90 days of buyer-problem posts did for one founder’s inbound (illustrative)",
+          "body": "Synthetic sample post body.\n\nThe content and numbers in this sample are fictional.\n\nWhat would you add?",
+          "metrics": {
+            "impressions": 2289,
+            "reactions": 103,
+            "comments": 31,
+            "reposts": 7,
+            "profileViews": 27,
+            "inbound": 1
+          }
+        },
+        {
+          "id": "post_s51",
+          "date": "2026-10-31",
+          "bucket": "problems",
+          "kind": "opinion",
+          "visual": "text-only",
+          "status": "draft",
+          "title": "The ghostwriter didn’t understand your product. That’s a briefing problem.",
+          "hook": "The ghostwriter didn’t understand your product. That’s a briefing problem.",
+          "body": "",
+          "metrics": {
+            "impressions": null,
+            "reactions": null,
+            "comments": null,
+            "reposts": null,
+            "profileViews": null,
+            "inbound": null
+          }
+        },
+        {
+          "id": "post_s52",
+          "date": "2026-11-03",
+          "bucket": "expertise",
+          "kind": "process",
+          "visual": "steps-graphic",
+          "status": "scheduled",
+          "title": "How to turn one sales call into three posts",
+          "hook": "How to turn one sales call into three posts",
+          "body": "",
+          "metrics": {
+            "impressions": null,
+            "reactions": null,
+            "comments": null,
+            "reposts": null,
+            "profileViews": null,
+            "inbound": null
+          }
+        },
+        {
+          "id": "post_s53",
+          "date": "2026-11-06",
+          "bucket": "industry",
+          "kind": "opinion",
+          "visual": "text-only",
+          "status": "idea",
+          "title": "React to this week’s industry news with my take",
+          "hook": "React to this week’s industry news with my take",
+          "body": "",
+          "metrics": {
+            "impressions": null,
+            "reactions": null,
+            "comments": null,
+            "reposts": null,
+            "profileViews": null,
+            "inbound": null
+          }
+        },
+        {
+          "id": "post_s54",
+          "date": "2026-11-09",
+          "bucket": "proof",
+          "kind": "result",
+          "visual": "screenshot",
+          "status": "draft",
+          "title": "Before → after: a founder profile rewrite (illustrative)",
+          "hook": "Before → after: a founder profile rewrite (illustrative)",
+          "body": "",
+          "metrics": {
+            "impressions": null,
+            "reactions": null,
+            "comments": null,
+            "reposts": null,
+            "profileViews": null,
+            "inbound": null
+          }
+        },
+        {
+          "id": "post_s55",
+          "date": "2026-11-12",
+          "bucket": "problems",
+          "kind": "opinion",
+          "visual": "text-only",
+          "status": "idea",
+          "title": "Posting into the void: why consistency isn’t the fix",
+          "hook": "Posting into the void: why consistency isn’t the fix",
+          "body": "",
+          "metrics": {
+            "impressions": null,
+            "reactions": null,
+            "comments": null,
+            "reposts": null,
+            "profileViews": null,
+            "inbound": null
+          }
+        }
+      ],
+      "engagement": [
+        {
+          "id": "eng_s56",
+          "date": "2026-10-17",
+          "minutes": 7,
+          "person": "Arjun Mehta (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s57",
+          "date": "2026-10-17",
+          "minutes": 8,
+          "person": "Rohan Pillai (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s58",
+          "date": "2026-10-17",
+          "minutes": 8,
+          "person": "Tara Nair (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s59",
+          "date": "2026-10-18",
+          "minutes": 6,
+          "person": "Kabir Shah (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s60",
+          "date": "2026-10-18",
+          "minutes": 8,
+          "person": "Ananya Gupta (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s61",
+          "date": "2026-10-18",
+          "minutes": 8,
+          "person": "Nisha Rao (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s62",
+          "date": "2026-10-19",
+          "minutes": 8,
+          "person": "Arjun Mehta (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s63",
+          "date": "2026-10-19",
+          "minutes": 8,
+          "person": "Someone in Clinicflow (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s64",
+          "date": "2026-10-19",
+          "minutes": 8,
+          "person": "Arjun Mehta (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s65",
+          "date": "2026-10-20",
+          "minutes": 6,
+          "person": "Rohan Pillai (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s66",
+          "date": "2026-10-20",
+          "minutes": 5,
+          "person": "Someone in Quoteloop (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s67",
+          "date": "2026-10-20",
+          "minutes": 8,
+          "person": "Someone in Tallystack (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s68",
+          "date": "2026-10-22",
+          "minutes": 7,
+          "person": "Arjun Mehta (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s69",
+          "date": "2026-10-22",
+          "minutes": 7,
+          "person": "Ananya Gupta (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s70",
+          "date": "2026-10-22",
+          "minutes": 6,
+          "person": "Dev Malhotra (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s71",
+          "date": "2026-10-23",
+          "minutes": 5,
+          "person": "Kabir Shah (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s72",
+          "date": "2026-10-23",
+          "minutes": 7,
+          "person": "Someone in Clinicflow (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s73",
+          "date": "2026-10-23",
+          "minutes": 5,
+          "person": "Someone in Metricly (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s74",
+          "date": "2026-10-24",
+          "minutes": 6,
+          "person": "Nisha Rao (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s75",
+          "date": "2026-10-24",
+          "minutes": 7,
+          "person": "Someone in Rentroll (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s76",
+          "date": "2026-10-24",
+          "minutes": 6,
+          "person": "Ananya Gupta (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s77",
+          "date": "2026-10-26",
+          "minutes": 5,
+          "person": "Vikram Bose (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s78",
+          "date": "2026-10-26",
+          "minutes": 6,
+          "person": "Ananya Gupta (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s79",
+          "date": "2026-10-26",
+          "minutes": 5,
+          "person": "Nisha Rao (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s80",
+          "date": "2026-10-27",
+          "minutes": 5,
+          "person": "Someone in Metricly (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s81",
+          "date": "2026-10-27",
+          "minutes": 7,
+          "person": "Kabir Shah (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s82",
+          "date": "2026-10-27",
+          "minutes": 6,
+          "person": "Someone in Clinicflow (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s83",
+          "date": "2026-10-28",
+          "minutes": 7,
+          "person": "Dev Malhotra (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s84",
+          "date": "2026-10-28",
+          "minutes": 8,
+          "person": "Someone in Ledgerleaf (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s85",
+          "date": "2026-10-28",
+          "minutes": 5,
+          "person": "Dev Malhotra (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s86",
+          "date": "2026-10-29",
+          "minutes": 5,
+          "person": "Dev Malhotra (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s87",
+          "date": "2026-10-29",
+          "minutes": 7,
+          "person": "Someone in Stackyard (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s88",
+          "date": "2026-10-29",
+          "minutes": 8,
+          "person": "Someone in Ledgerleaf (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        },
+        {
+          "id": "eng_s89",
+          "date": "2026-10-30",
+          "minutes": 8,
+          "person": "Vikram Bose (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s90",
+          "date": "2026-10-30",
+          "minutes": 7,
+          "person": "Meera Iyer (synthetic)",
+          "relation": "icp",
+          "note": "Added a specific example to their post"
+        },
+        {
+          "id": "eng_s91",
+          "date": "2026-10-30",
+          "minutes": 6,
+          "person": "Someone in Hirelane (synthetic)’s network (synthetic)",
+          "relation": "network",
+          "note": "Replied to a comment thread"
+        }
+      ],
+      "settings": {
+        "dailyEngageMinutes": 15,
+        "weeklyPosts": 3,
+        "bucketMix": {
+          "problems": 35,
+          "industry": 20,
+          "expertise": 30,
+          "proof": 15
+        },
+        "weights": {
+          "reactions": 1,
+          "comments": 2,
+          "reposts": 3
+        },
+        "minSample": 3
+      }
+    },
+    {
+      "id": "ws_client",
+      "name": "Client: Fernhill Analytics founder (synthetic)",
+      "offer": {
+        "audience": "operations leaders at mid-size logistics firms",
+        "outcome": "cut reporting time",
+        "proof": ""
+      },
+      "buyers": [],
+      "competitors": [],
+      "compPosts": [],
+      "outsideIdeas": [],
+      "profile": {
+        "headline": "",
+        "banner": "",
+        "about": "",
+        "featured": []
+      },
+      "posts": [],
+      "engagement": [],
+      "settings": {
+        "dailyEngageMinutes": 15,
+        "weeklyPosts": 3,
+        "bucketMix": {
+          "problems": 35,
+          "industry": 20,
+          "expertise": 30,
+          "proof": 15
+        },
+        "weights": {
+          "reactions": 1,
+          "comments": 2,
+          "reposts": 3
+        },
+        "minSample": 3
+      }
+    }
+  ],
+  "log": []
+}
